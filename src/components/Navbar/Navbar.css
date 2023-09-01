@@ -2,9 +2,9 @@
     width: 90%;
     display: flex;
     height: 90px;
-    flex: row;
+    flex-direction: row;
     margin: 0px auto 0px auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px;
     justify-content: space-between;
 }
 
@@ -29,9 +29,12 @@
     width: 40px;
     border-radius: 50%;
     background-color: grey;
+    border: red;
     cursor: pointer;
 }
-
+.img-holder:hover {
+    border:hsl(26, 100%, 55%);
+}
 .cart {
     font-size: 20px;
     cursor: pointer;
