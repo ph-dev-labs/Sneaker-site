@@ -1,0 +1,59 @@
+.navbar {
+    width: 90%;
+    display: flex;
+    height: 90px;
+    flex: row;
+    margin: 0px auto 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    justify-content: space-between;
+}
+
+.title-links-cont {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart-img-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+}
+
+.img-holder {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.shop-name {
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.links {
+    font-weight: 200;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.links:hover {
+    font-weight: 400;
+}
+
+.links:active {
+    color: hsl(26, 100%, 55%);
+}
