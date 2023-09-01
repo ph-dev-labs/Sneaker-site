@@ -123,7 +123,16 @@
     background-color: hsl(26, 100%, 55%);
     border-radius: 8px;
     cursor: pointer;
+    transition:  all 0.3s ease;
 }
+
+.btn:hover,
+.btn:focus {
+    height: 47px;
+    width: 198px;
+}
+
+
 
 .btn-cart-icon {
     color: white;
