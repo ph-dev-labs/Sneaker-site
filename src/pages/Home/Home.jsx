@@ -8,16 +8,19 @@ import { BsCart4 } from "react-icons/bs";
 import Holder from "../../components/Holder/Holder";
 import "./Home.css";
 const Home = () => {
+
+  const imageArr = [image1, image2, image3, image4]
+  const mapImage = imageArr.map((images, index) => {
+   return <Holder image={images} key={index} />
+  })
+
   return (
     <div className="home">
       <div className="descrpt-sec">
         <div className="shoe-img-holder">
           <img src={image} alt="shop item" className="desc-img" />
           <div className="preview-holder">
-            <Holder image={image1} />
-            <Holder image={image2} />
-            <Holder image={image3} />
-            <Holder image={image4} />
+            {mapImage}
           </div>
         </div>
         <div className="descrpt">
