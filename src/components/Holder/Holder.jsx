@@ -3,7 +3,7 @@ import Modal from '../Modal/Modal'
 import "./Holder.css"
 
 const Holder = (props) => {
-  const [modal, setModal] = useState(true)
+  const [modal, setModal] = useState(false)
 
   const openModal = () => {
     setModal(true);
