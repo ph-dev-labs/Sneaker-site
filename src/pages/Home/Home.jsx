@@ -7,8 +7,7 @@ import image4 from "../../assets/image-product-4-thumbnail.jpg"
 import { BsCart4 } from "react-icons/bs";
 import Holder from "../../components/Holder/Holder";
 import "./Home.css";
-const Home = () => {
-
+const Home = ({addToCart, item , price, handleDecreament, handleIncreament, quantity}) => {
   const imageArr = [image1, image2, image3, image4]
   const mapImage = imageArr.map((images, index) => {
    return <Holder image={images} key={index} />
@@ -25,7 +24,7 @@ const Home = () => {
         </div>
         <div className="descrpt">
           <h3 className="title">sneaker company</h3>
-          <h2 className="desc2">full limited edition sneakers</h2>
+          <h2 className="desc2">{item}</h2>
           <p className="desc-details">
             These low-profile sneakers are are your perfect casual wear
             companion. Featuring a durable outer sole, they'll withstand
@@ -38,18 +37,18 @@ const Home = () => {
                 <span className="discount">50%</span>
               </div>
             </div>
-            <p className="frm-price">$250</p>
+            <p className="frm-price">{`$${price}`}</p>
           </div>
           <div className="cart-btn-cont">
             <div className="cart-logic-cont">
-              <p className="cart-symb">-</p>
-              <p className="cart-state">3</p>
-              <p className="cart-symb">+</p>
+              <p className="cart-symb" onClick={handleDecreament}>-</p>
+              <p className="cart-state">{quantity}</p>
+              <p className="cart-symb" onClick={handleIncreament}>+</p>
             </div>
             <div className="btn">
               <div className="flex">
                 <BsCart4 className="btn-cart-icon" />
-                <p className="btn-text">Add to cart</p>
+                <p className="btn-text" onClick={ () => addToCart(item,price,quantity)}>Add to cart</p>
               </div>
             </div>
           </div>
