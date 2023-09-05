@@ -44,6 +44,16 @@
   
   /* Checkout button hover effect */
   .checkout-button:hover {
-    background-color: #0056b3;
+    background-color: orangered;
   }
-  
+  .text {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Kumbh Sans";
+  }
+
+  .text-1 {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Kumbh Sans";
+  }
