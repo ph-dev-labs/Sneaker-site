@@ -1,0 +1,49 @@
+/* Cart checkout item container */
+.cart-checkout-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 270px;
+    margin: 20px; /* Added margin for spacing */
+  }
+  
+  /* Cart items list */
+  .cart-items {
+    margin-bottom: 10px;
+  }
+  
+  /* Cart item */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  /* Checkout total */
+  .cart-total {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  /* Checkout button */
+  .checkout-button {
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Kumbh Sans";
+    width: 100%; /* Button width expanded to container */
+  }
+  
+  /* Checkout button hover effect */
+  .checkout-button:hover {
+    background-color: #0056b3;
+  }
+  

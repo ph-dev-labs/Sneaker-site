@@ -29,11 +29,10 @@
     width: 40px;
     border-radius: 50%;
     background-color: grey;
-    border: red;
     cursor: pointer;
 }
 .img-holder:hover {
-    border:hsl(26, 100%, 55%);
+    border-color:hsl(26, 100%, 55%);
 }
 .cart {
     font-size: 20px;
@@ -59,4 +58,13 @@
 
 .links:active {
     color: hsl(26, 100%, 55%);
+}
+
+.cart-lenght {
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    transform: translateY(6px);
+    margin-left: 10px;
+
 }

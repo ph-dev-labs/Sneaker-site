@@ -65,7 +65,7 @@ const App = () => {
   };
   return (
     <div>
-      <Navbar cartItems={cartState.cartItems} />
+      <Navbar cartItems={cartState.cartItems} quantity={quantity} price={price} />
       <Home
         addToCart={addToCart}
         item={item}
