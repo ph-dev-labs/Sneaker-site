@@ -5,6 +5,7 @@ const Modal = ({image, closeModal}) => {
 
    
   return (
+    
     <div className="modal">
       <div className="modal-content">
         <img src={image} alt="Modal"  className='img'/>

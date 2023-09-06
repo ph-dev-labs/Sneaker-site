@@ -55,6 +55,7 @@ const Home = ({addToCart, item , price, handleDecreament, handleIncreament, quan
         </div>
       </div>
     </div>
+    
   );
 };
 

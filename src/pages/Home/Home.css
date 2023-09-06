@@ -158,3 +158,40 @@
     justify-content: space-between;
     margin-top: 14px;
 }
+
+
+/* media queries */
+
+@media (max-width: 480px) {
+    .descrpt-sec {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .descrpt {
+        width: 100%;
+        align-self: center;
+        margin-left: 30px;
+    }
+
+    .price-holder {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cart-btn-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        margin: 20px;
+    }
+    
+  }

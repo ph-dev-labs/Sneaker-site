@@ -68,3 +68,21 @@
     margin-left: 10px;
 
 }
+
+@media (max-width: 480px) {
+    .links {
+        display: none;
+    }
+
+    .cart-img-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 25%;
+    }
+
+    .check-holder {
+        transform: translateX(-83px);
+    }
+}

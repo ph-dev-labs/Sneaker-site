@@ -38,13 +38,15 @@ const Navbar = ({ cartItems, quantity, price }) => {
         <div className="cart-holder">
           <div className="cart-lenght">{quantity}</div>
           <BsCart4 className="cart" onClick={openModal} />
-          <Checkout
-            closeModal={closeModal}
-            modalRef={modalRef}
-            cartItems={cartItems}
-            price={price}
-            quantity={quantity}
-          />
+          <div className="check-holder">
+            <Checkout
+              closeModal={closeModal}
+              modalRef={modalRef}
+              cartItems={cartItems}
+              price={price}
+              quantity={quantity}
+            />
+          </div>
         </div>
         <div className="img-holder"></div>
       </div>

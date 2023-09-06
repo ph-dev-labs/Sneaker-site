@@ -1,67 +1,75 @@
+/* Default styles for the modal */
 .modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: auto;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  .modal-content {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    animation: fadeIn 0.3s ease-in-out;
-  }
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  animation: fadeIn 0.3s ease-in-out;
+}
 
-  
-  
-  /* CSS for Thumbnails */
+.modal-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* CSS for Thumbnails */
+.img {
+  width: 183%; /* Use 100% width for images to make them responsive */
+  max-width: 400px; /* Adjust the maximum width as needed */
+  height: auto; /* Auto adjust height to maintain aspect ratio */
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+.x-btn {
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  text-align: center;
+  margin-left: auto; /* Adjust alignment as needed */
+  margin-right: auto; /* Adjust alignment as needed */
+  margin-bottom: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
   .img {
-    width: 400px; /* Adjust the size as needed */
-    height: 400px;
+    width: 184%; /* Use 100% width for images on smaller screens */
+    max-width: none; /* Reset max-width for smaller screens */
+    height: auto; /* Auto adjust height to maintain aspect ratio */
     cursor: pointer;
     border-radius: 13px;
   }
-
-  .x-btn {
-    cursor: pointer;
-    font-size: 16px;
-    color: hsl(26, 100%, 55%);
-    font-weight: 700;
-    text-align: center;
-    margin-left: 370px;
-    margin-bottom: 20px;
-  }
-
-
-
-
-  /* Fade-in animation */
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  /* Fade-out animation */
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
+}
