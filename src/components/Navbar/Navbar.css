@@ -86,3 +86,13 @@
         transform: translateX(-83px);
     }
 }
+
+@media (max-width: 768px) {
+    .title-links-cont {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

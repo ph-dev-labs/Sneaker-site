@@ -195,3 +195,22 @@
     }
     
   }
+
+
+  @media (max-width: 768px) {
+    .price-holder {
+        display: flex;
+        flex-direction: row;
+        width: 56%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cart-btn-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 110%;
+    }
+
+  }
