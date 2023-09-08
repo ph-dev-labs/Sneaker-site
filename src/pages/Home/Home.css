@@ -162,55 +162,41 @@
 
 /* media queries */
 
-@media (max-width: 480px) {
+/* Default styles for screens wider than 600px */
+
+/* ... Your existing CSS rules ... */
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
     .descrpt-sec {
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        margin-top: 2rem; /* Adjust spacing for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
         align-items: center;
-        
     }
 
     .descrpt {
-        width: 100%;
-        align-self: center;
-        margin-left: 30px;
+        width: 80%; /* Wider description for smaller screens */
+        margin: 1rem 0; /* Adjust margins for better spacing */
     }
 
     .price-holder {
-        display: flex;
-        flex-direction: row;
-        width: 45%;
-        justify-content: space-evenly;
-        align-items: center;
+        width: 60%; /* Adjust width for better spacing */
+        margin-top: 1rem; /* Add space between elements */
     }
 
     .cart-btn-cont {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 85%;
-        margin: 20px;
+        width: 100%; /* Full width for buttons */
+        margin: 1rem 0; /* Adjust margins for better spacing */
     }
-    
-  }
+}
 
-
-  @media (max-width: 768px) {
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
     .price-holder {
-        display: flex;
-        flex-direction: row;
-        width: 56%;
-        justify-content: space-evenly;
-        align-items: center;
+        width: 55%; /* Wider price holder */
     }
 
     .cart-btn-cont {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 110%;
+        width: 60%; /* Wider button container */
     }
-
-  }
+}
